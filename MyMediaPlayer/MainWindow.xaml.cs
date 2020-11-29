@@ -25,29 +25,7 @@ namespace MyMediaPlayer
             player.Volume = 1;
             image.Opacity = 1;
 
-           
-            //binding1.Source = player;
-            //binding1.Path = new PropertyPath("Volume");
-            //binding1.Mode = BindingMode.TwoWay;
-            //sliderVolume2.SetBinding(Slider.ValueProperty, binding1);
 
-            
-            //binding2.Source = player;
-            //binding2.Path = new PropertyPath("Balance");
-            //binding2.Mode = BindingMode.TwoWay;
-            //sliderBalance2.SetBinding(Slider.ValueProperty, binding2);
-
-            //Binding binding3 = new Binding();
-            //binding3.Source = mediaElement;
-            //binding3.Path = new PropertyPath("Volume");
-            //binding3.Mode = BindingMode.TwoWay;
-            //sliderVolume1.SetBinding(Slider.ValueProperty, binding3);
-
-            //Binding binding4 = new Binding();
-            //binding4.Source = mediaElement;
-            //binding4.Path = new PropertyPath("Balance");
-            //binding4.Mode = BindingMode.TwoWay;
-            //sliderBalance1.SetBinding(Slider.ValueProperty, binding4);
         }
 
         private void EnableButtons(bool is_playing)
@@ -75,23 +53,11 @@ namespace MyMediaPlayer
             {
                 image.Opacity = 0;
                 mediaElement.Play();
-                // sliderBalance1.Opacity = 1;
-                //sliderBalance2.Opacity = 0;
-                //sliderVolume1.Opacity = 1;
-                //sliderVolume2.Opacity = 0;
-                //BindingOperations.ClearBinding(sliderVolume2, Slider.ValueProperty);
-                //BindingOperations.ClearBinding(sliderBalance2, Slider.ValueProperty);
             }
             else
             {
                 image.Opacity = 1;
                 player.Play();
-                //sliderBalance1.Opacity = 0;
-                //sliderBalance2.Opacity = 1;
-                // sliderVolume1.Opacity = 0;
-                //sliderVolume2.Opacity = 1;
-                //BindingOperations.ClearBinding(sliderVolume1, Slider.ValueProperty);
-                //BindingOperations.ClearBinding(sliderBalance1, Slider.ValueProperty);
             }
             EnableButtons(true);
         }
